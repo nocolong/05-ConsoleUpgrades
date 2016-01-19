@@ -1,0 +1,20 @@
+﻿<Window x:Class="WpfApplication1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid RenderTransformOrigin="0.502,0.312" Margin="0,0,0,-21">
+        <TextBox x:Name="CostBox" Height="43" TextWrapping="Wrap" Text="Enter Cost" VerticalAlignment="Top" Margin="10,10,312,0" />
+        <Button x:Name="Changebutton" Content="Calculate change $" Margin="10,76,10,0" VerticalAlignment="Top" Height="50" RenderTransformOrigin="0.499,1.045"  Click="Changebutton_Click" BorderThickness="5"/>
+        <TextBox x:Name="PaidBox" Height="43" Margin="249,10,30,0" TextWrapping="Wrap" Text="Paid" VerticalAlignment="Top"/>
+        <TextBlock x:Name="ChangeIs" HorizontalAlignment="Left" Margin="10,144,0,0" TextWrapping="Wrap" Text="Change $" VerticalAlignment="Top" Width="497" Height="49"/>
+        <Button x:Name="Billsbutton" Content="Bills" Margin="10,198,432,0" VerticalAlignment="Top" RenderTransformOrigin="0.574,0.335" Height="36" Click="Billsbutton_Click" BorderThickness="5"/>
+        <TextBlock x:Name="BillsBlock" HorizontalAlignment="Left" Margin="102,198,0,0" TextWrapping="Wrap" Text="List of bills owed:" VerticalAlignment="Top" Width="405" Height="36"/>
+        <Button x:Name="CoinsButton" Content="Coins" HorizontalAlignment="Left" Margin="10,265,0,0" VerticalAlignment="Top" Width="75" Height="36" Click="CoinsButton_Click" BorderThickness="5"/>
+        <TextBlock x:Name="CoinsBlock" Margin="102,265,10,0" TextWrapping="Wrap" Text="List of coins owed:" VerticalAlignment="Top" RenderTransformOrigin="0.488,0.5" Height="36"/>
+
+    </Grid>
+</Window>
